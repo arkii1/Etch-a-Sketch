@@ -1,0 +1,62 @@
+:root
+{
+    --size: 16;
+}
+
+body
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+.header
+{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-left: 175px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container
+{
+    width: 700px;
+    height: 700px;
+
+    display: grid;
+    grid-template-rows: repeat(var(--size), 1fr);
+    grid-template-columns: repeat(var(--size), 1fr);
+
+    background-color: white;
+
+}
+
+.buttons-container
+{
+    height: 500px;
+    width: 200px;
+
+    display:flex;
+    flex-direction: column;
+}
+
+button
+{
+    height: 50px;
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+#colour-button
+{
+}
