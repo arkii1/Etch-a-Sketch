@@ -59,12 +59,13 @@ function deleteGrid()
         return;
     }
 
+    console.log("running");
+
     let cells = document.getElementsByClassName('grid-item');
-    for(let c = 0; c < cells.length; c++)
+    console.log("Cells length: " + cells.length);
+    for(let c = 0; c < cells.length;)
     {
-        // Feel like this isn't right
-        cells[c].remove();
-        cells[c].style.backgroundColor = 'White';
+        cells[c].remove(); //probably should use foreach here
     }
 }
 
