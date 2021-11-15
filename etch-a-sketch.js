@@ -76,6 +76,24 @@ function setCurrentColour(colour)
 function setCurrentMode(mode)
 {
     currentMode = mode;
+    changeActiveButton(currentMode);
+}
+
+function changeActiveButton(mode)
+{
+    switch(mode)
+    {
+        case 'colour':
+            colourButton.classList.add('active-button')
+            eraseButton.classList.remove('active-button');
+            break;
+        case 'erase':
+            eraseButton.classList.add('active-button');
+            colourButton.classList.remove('active-button')
+            break;
+    }
+
+    console.log('logged');
 }
 
 function reloadGrid()
@@ -102,4 +120,5 @@ function changeColour(e)
 window.onload = () =>
 {
     initGrid(size);
+    changeActiveButton('colour');
 }
