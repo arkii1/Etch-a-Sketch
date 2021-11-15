@@ -59,8 +59,6 @@ function deleteGrid()
         return;
     }
 
-    console.log("running");
-
     let cells = document.getElementsByClassName('grid-item');
     console.log("Cells length: " + cells.length);
     for(let c = 0; c < cells.length;)
@@ -93,8 +91,6 @@ function changeActiveButton(mode)
             colourButton.classList.remove('active-button')
             break;
     }
-
-    console.log('logged');
 }
 
 function reloadGrid()
