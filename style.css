@@ -45,6 +45,8 @@ body
     grid-template-columns: repeat(var(--size), 1fr);
 
     background-color: white;
+    box-shadow: 4px 3px 3px 3px #888888;
+
 
 }
 
@@ -69,6 +71,8 @@ button
     border-radius: 3%;
     opacity: 0.7;
     transition: opacity, transform .2s;
+    box-shadow: 4px 3px 3px 3px #888888;
+
 
 }
 
@@ -104,6 +108,7 @@ button:hover
     border: none;
     border-color: none;
     background-color: lightgrey;
+    box-shadow: 4px 3px 3px 3px #888888;
 }
 
 #colour-picker:active
@@ -115,7 +120,7 @@ button:hover
 {
     font-size: 18px;
     margin-bottom: 5px;
-    color: rgb(48, 48, 48);;
+    color: rgb(48, 48, 48);
 }
 
 #size-slider
@@ -130,7 +135,8 @@ button:hover
     transition: opacity, transform .2s;
     border-radius: 25px;
     background-color: lightgrey;
-    border: 1px solid rgb(48, 48, 48);;
+    border: 1px solid rgb(48, 48, 48);
+    box-shadow: 4px 3px 3px 3px #888888;
 }
 
 #size-slider:hover
